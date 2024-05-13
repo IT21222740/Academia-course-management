@@ -1,0 +1,13 @@
+version: "3"
+
+services:
+  nodejs-app:
+    build: .
+    ports:
+      - "4000:4000"
+    # Add any environment variables if needed
+    environment:
+      NODE_ENV: "production"
+    # Optionally, you can mount a volume to persist data
+    volumes:
+      - ./app:/app
