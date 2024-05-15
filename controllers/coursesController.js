@@ -3,7 +3,7 @@ const Enrollment = require("../models/EnrollmentModel");
 const server  = require("../server");
 // import axios from "axios";
 
-// Inside your courseDelete controller
+// Inside courseDelete controller
 const channel = server.serverInstance.getRabbitMqChannel();
 if (!channel) {
   // Handle the case where the channel is not yet available
